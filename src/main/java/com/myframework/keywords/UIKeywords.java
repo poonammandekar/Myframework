@@ -6,6 +6,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
 
+import javax.print.DocFlavor.BYTE_ARRAY;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 //import org.apache.log4j.Logger;
@@ -107,4 +109,9 @@ public class UIKeywords {
 		return texts;
 	}
 
+public static void clickbutton(By Element)
+{
+	driver.findElement(Element).click();
+	System.out.println("men redio button pressed");
+	}
 }
