@@ -29,5 +29,10 @@ public class ProductTests extends TestBase {
 			Assert.assertTrue(productTitle.contains("Polo"),"Product title doesn't contain polo: "+productTitle);
 		}
 	}
+	@Test
+	public void verifyFilter()
+	{
+		
+	}
 	
 }

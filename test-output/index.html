@@ -39,6 +39,7 @@
       <div class="suite">
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Default_suite">
             <a href="#" panel-name="suite-Default_suite" class="navigator-link">
               <span class="suite-name border-passed">Default suite</span>
             </a> <!-- navigator-link -->
@@ -50,6 +51,8 @@
             <div class="suite-section-content">
               <ul>
                 <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
+                    <span>C:\Users\admin\AppData\Local\Temp\testng-eclipse-636444877\testng-customsuite.xml</span>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
                     <span>C:\Users\DELL\AppData\Local\Temp\testng-eclipse-596445124\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
@@ -103,6 +106,8 @@
                     </span>
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.myframework.ProductTests" hash-for-method="verifySearchResultForPoloMen">verifySearchResultForPoloMen</a> <!-- method navigator-link -->
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Default_suite" title="com.myframework.newClass" class="method navigator-link" hash-for-method="verifySearchResultForPoloWomen">verifySearchResultForPoloWomen</a> <!-- method navigator-link -->
                       </span>
@@ -122,11 +127,15 @@
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
+              <span class="class-name">com.myframework.ProductTests</span>
               <span class="class-name">com.myframework.newClass</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
+                  <a name="verifySearchResultForPoloMen">
+                  </a> <!-- verifySearchResultForPoloMen -->
+                  <span class="method-name">verifySearchResultForPoloMen</span>
                   <a name="verifySearchResultForPoloWomen">
                   </a> <!-- verifySearchResultForPoloWomen -->
                   <span class="method-name">verifySearchResultForPoloWomen</span>
@@ -137,6 +146,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\admin\AppData\Local\Temp\testng-eclipse-636444877\testng-customsuite.xml</span>
             <span class="header-content">C:\Users\DELL\AppData\Local\Temp\testng-eclipse-596445124\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
@@ -188,6 +198,9 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
+data.setCell(0, 1, 'verifySearchResultForPoloMen')
+data.setCell(0, 2, 'com.myframework.ProductTests')
+data.setCell(0, 3, 19311);
 data.setCell(0, 1, 'verifySearchResultForPoloWomen')
 data.setCell(0, 2, 'com.myframework.newClass')
 data.setCell(0, 3, 8236);
@@ -195,6 +208,7 @@ window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-
 return data;
 }
               </script>
+              <span class="suite-total-time">Total running time: 19 seconds</span>
               <span class="suite-total-time">Total running time: 8 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
@@ -227,6 +241,8 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
+                <span class="method-name">verifySearchResultForPoloMen</span>
+                <span class="method-start">21334 ms</span>
                 <span class="method-name">verifySearchResultForPoloWomen</span>
                 <span class="method-start">5027 ms</span>
               </div> <!-- test-method -->
