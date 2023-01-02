@@ -21,6 +21,7 @@ public class ProductTests extends TestBase {
 		UIKeywords.launchUrl("https://www.myntra.com");
 		UIKeywords.enterText(By.xpath("//input[@placeholder='Search for products, brands and more']"),"polo men");
 		UIKeywords.hitbutton(KeyEvent.VK_ENTER);
+		UIKeywords.clickbutton(By.linkText("Men"));
 		
 		List<String> productTitles=UIKeywords.getTexts(By.xpath("//h4[@class='product-product']"));
 		System.out.println(productTitles);
@@ -33,4 +34,5 @@ public class ProductTests extends TestBase {
 	{
 		
 	}
+	
 }
