@@ -2,21 +2,12 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="40748" started-at="2022-12-30T11:46:32 IST" finished-at="2022-12-30T11:47:13 IST">
+  <suite name="Default suite" duration-ms="85922" started-at="2023-01-02T12:31:17 IST" finished-at="2023-01-02T12:32:43 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="40748" started-at="2022-12-30T11:46:32 IST" finished-at="2022-12-30T11:47:13 IST">
-      <class name="com.myframework.ProductTests">
-        <test-method status="PASS" signature="setUP(java.lang.String)[pri:0, instance:com.myframework.ProductTests@15bfd87]" name="setUP" is-config="true" duration-ms="21333" started-at="2022-12-30T11:46:32 IST" finished-at="2022-12-30T11:46:54 IST">
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
-  <reporter-output>
-  </reporter-output>
-  <suite started-at="2022-12-29T22:49:40 IST" name="Default suite" finished-at="2022-12-29T22:49:53 IST" duration-ms="13317">
-    <groups>
-    </groups>
-    <test started-at="2022-12-29T22:49:40 IST" name="Default test" finished-at="2022-12-29T22:49:53 IST" duration-ms="13317">
+    <test name="Default test" duration-ms="85922" started-at="2023-01-02T12:31:17 IST" finished-at="2023-01-02T12:32:43 IST">
       <class name="com.myframework.newClass">
-        <test-method is-config="true" signature="setUP(java.lang.String)[pri:0, instance:com.myframework.newClass@a38c7fe]" started-at="2022-12-29T22:49:40 IST" name="setUP" finished-at="2022-12-29T22:49:45 IST" duration-ms="5025" status="PASS">
+        <test-method status="PASS" signature="setUP(java.lang.String)[pri:0, instance:com.myframework.newClass@15bfd87]" name="setUP" is-config="true" duration-ms="8265" started-at="2023-01-02T12:31:17 IST" finished-at="2023-01-02T12:31:25 IST">
           <params>
             <param index="0">
               <value is-null="true"/>
@@ -25,8 +16,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUP -->
-        <test-method status="PASS" signature="verifySearchResultForPoloMen()[pri:0, instance:com.myframework.ProductTests@15bfd87]" name="verifySearchResultForPoloMen" duration-ms="19311" started-at="2022-12-30T11:46:54 IST" finished-at="2022-12-30T11:47:13 IST">
-        <test-method signature="verifySearchResultForPoloWomen()[pri:0, instance:com.myframework.newClass@a38c7fe]" started-at="2022-12-29T22:49:45 IST" name="verifySearchResultForPoloWomen" finished-at="2022-12-29T22:49:53 IST" duration-ms="8236" status="PASS">
+        <test-method status="PASS" signature="verifySearchResultForPoloWomen()[pri:0, instance:com.myframework.newClass@15bfd87]" name="verifySearchResultForPoloWomen" duration-ms="77421" started-at="2023-01-02T12:31:25 IST" finished-at="2023-01-02T12:32:43 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySearchResultForPoloWomen -->
