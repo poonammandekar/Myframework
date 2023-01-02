@@ -32,6 +32,16 @@ public class ProductTests extends TestBase {
 	@Test
 	public void verifyFilter()
 	{
+		UIKeywords.launchUrl("https://www.myntra.com");
+		UIKeywords.enterText(By.xpath("//input[@placeholder='Search for products, brands and more']"),"polo men");
+		UIKeywords.hitbutton(KeyEvent.VK_ENTER);
+		UIKeywords.clickbutton(By.linkText("Men"));
+		
+		List<String> productTitles=UIKeywords.getTexts(By.xpath("//h4[@class='product-product']"));
+		System.out.println(productTitles);
+		for(String productTitle:productTitles) {
+			Assert.assertTrue(productTitle.contains("Polo"),"Product title doesn't contain polo: "+productTitle);
+		
 		
 	}
 	

@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
 
-import javax.print.DocFlavor.BYTE_ARRAY;
+
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -18,6 +18,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
+import org.openqa.selenium.interactions.Actions;
 
 
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -113,5 +114,51 @@ public static void clickbutton(By Element)
 {
 	driver.findElement(Element).click();
 	System.out.println("men redio button pressed");
-	}
 }
+
+public static WebElement getWebElement(String locatorType,String locatorValue) {
+	WebElement element=null;
+	if(locatorType.equalsIgnoreCase("xpath"))
+	{
+		element=driver.findElement(By.xpath(locatorValue));
+	}
+	if(locatorType.equalsIgnoreCase("id"))
+	{
+		element=driver.findElement(By.id(locatorValue));
+	}if(locatorType.equalsIgnoreCase("name"))
+	{
+		element=driver.findElement(By.name(locatorValue));
+	}if(locatorType.equalsIgnoreCase("tagname"))
+	{
+		element=driver.findElement(By.tagName(locatorValue));
+	}if(locatorType.equalsIgnoreCase("class"))
+	{
+		element=driver.findElement(By.className(locatorValue));
+	}if(locatorType.equalsIgnoreCase("linktext"))
+	{
+		element=driver.findElement(By.linkText(locatorValue));
+	}if(locatorType.equalsIgnoreCase("partiallinktext"))
+	{
+		element=driver.findElement(By.partialLinkText(locatorValue));
+	}
+	if(locatorType.equalsIgnoreCase("css"))
+	{
+		element=driver.findElement(By.cssSelector(locatorValue));
+	}
+	
+	return element;
+}
+
+public static void maxWindow() {
+	// TODO Auto-generated method stub
+	driver.manage().window().maximize();
+}
+
+public static void mouseMove(String locatorType,String locatorValue) {
+	// TODO Auto-generated method stub
+	Actions act=new Actions(driver);
+	act.moveToElement(getWebElement(locatorType,locatorValue)).perform();
+}
+
+}
+
